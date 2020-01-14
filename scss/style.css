@@ -178,7 +178,7 @@ a {
 
 @media (max-width: 767px) {
   .member-image__tsuka {
-    clip-path: polygon(50% 100%, 100% 20%, 85% 0, 15% 0, 0 20%);
+    -webkit-clip-path: polygon(50% 100%, 100% 20%, 85% 0, 15% 0, 0 20%);
     width: 230px;
     height: 235px;
   }
@@ -233,4 +233,58 @@ a {
   top: 0;
   left: 0;
   position: absolute;
+}
+
+.fs-gilbert-color-bold-preview5 {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .our-activities__info-card {
+    transform: translate(77%);
+    transition: all .5s;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-activities__study-card {
+    transform: translate(77%);
+    transition: all .5s;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-activities__event-card {
+    transform: translate(77%);
+    transition: all .5s;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-activities__info-card.open {
+    transform: translateZ(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .our-activities__study-card.open {
+    transform: translateZ(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .our-activities__event-card.open {
+    transform: translateZ(0);
+  }
+}
+
+.fadein {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 1.5s;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }

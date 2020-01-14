@@ -206,7 +206,7 @@ $twitter: #1DA1F2;
 
 .member-image__tsuka{
 	@include respond-below(md) {
-		clip-path: polygon(50% 100%, 100% 20%, 85% 0, 15% 0, 0 20%);
+		-webkit-clip-path: polygon(50% 100%, 100% 20%, 85% 0, 15% 0, 0 20%);
 		width: 230px;
 		height: 235px;
 	}
@@ -300,4 +300,57 @@ $twitter: #1DA1F2;
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.fs-gilbert-color-bold-preview5{
+	color: #000;
+}
+
+.our-activities__info-card{
+	@include respond-below(md) {
+		transform: translate(77%);
+		transition: all .5s;
+	}
+}
+.our-activities__study-card{
+	@include respond-below(md) {
+		transform: translate(77%);
+		transition: all .5s;
+	}
+}
+.our-activities__event-card{
+	@include respond-below(md) {
+		transform: translate(77%);
+		transition: all .5s;
+	}
+}
+
+.our-activities__info-card.open{
+	@include respond-below(md) {
+		transform: translateZ(0)
+	}
+}
+
+.our-activities__study-card.open{
+	@include respond-below(md) {
+		transform: translateZ(0)
+	}
+}
+
+.our-activities__event-card.open{
+	@include respond-below(md) {
+		transform: translateZ(0)
+	}
+}
+
+
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition:all 1.5s;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
 }
