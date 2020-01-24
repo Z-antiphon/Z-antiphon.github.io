@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" >
 	<link href="https://fonts.fontself.com/gE309jx/gilbert-color-bold-preview5.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="scss/slick.css"> -->
 	<link rel="stylesheet" type="text/css" href="scss/style.css">
 
 	<!-- Required meta tags -->
@@ -14,12 +15,13 @@
 </head>
 <body>
 	<div class="wrap">
+	<div class="divider"></div>
 	<!-- main-visual -->
 	<section id="main-visual" class="container-fluent bg-zan__red">
 		<div class="row">
-			<div class="py-3 px-4 position-relative">
+			<div class="col-sm-12 py-3 px-4 position-relative">
 				<img class="main-visual__image" src="img/topImg.png" alt="">
-				<div class="main-visual__logo py-3 px-4">
+				<div class="main-visual__logo py-3 pl-sm-0 px-4">
 					<img class="zan-logo" src="img/logo.png" alt="">
 				</div>
 				<div class="main-visual__text py-3 px-4 text-white">
@@ -55,7 +57,7 @@
 						<!-- <p class="text-white">
 							Z-αntiphonとは？
 						</p> -->
-						<p class="text-white text-xs mb-0">
+						<p class="text-white mb-0 m-sm-5">
 							『Z-αntiphon(ジ・アンティフォン)』は『次世代ラボ』のRailsチャンネルから派生したプログラミングコミュニティです。
 							antiphonは「Rail」のラテン語で、『軌条（レール）』のように、みんなで支えあいながら頑張っていきたい
 							それが今の若者のZ世代から、次世代の若者のα世代に引き継がれていくようにという意味が込められています。
@@ -79,45 +81,45 @@
 				</div>
 			</div>
 		</div>
-		<div class="our-activities__info-card col-12 col-md-10 bg-zan__black my-3 ml-3 overflow-hidden">
+		<div class="our-activities__info-card col-12 col-md-10 bg-zan__black my-3 ml-3 p-sm-5 overflow-hidden">
 			<div class="card-body px-0">
 				<div class="row text-white">
-					<div id="our-activities__info-icon" class="col-2 text-white text-xxl">
+					<div id="our-activities__info-icon" class="col-2 col-sm-1 text-white text-xxl">
 						<i class="fas fa-comments"></i>
 					</div>
 					<div class="col-10">
-						<h6>情報共有</h6>
-						<p class="text-xs">
+						<h6 class="activities-title">情報共有</h6>
+						<p class="activities-text">
 							主にSlackを用いて、プログラミング言語は勿論のこと、デザイン、英語、資格等あらゆる情報を共有しています。
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="our-activities__study-card col-12 col-md-10 bg-zan__black my-3 ml-3 overflow-hidden">
+		<div class="our-activities__study-card col-12 col-sm-10 bg-zan__black my-3 my-sm-5 ml-3 p-sm-5 overflow-hidden">
 			<div class="card-body px-0">
 				<div class="row text-white">
-					<div id="our-activities__study-icon" class="col-2 text-xxl">
+					<div id="our-activities__study-icon" class="col-2 col-sm-1 text-xxl">
 						<i class="fas fa-desktop"></i>
 					</div>
 					<div class="col-10">
-						<h6>勉強会</h6>
-						<p class="text-xs">
+						<h6 class="activities-title">勉強会</h6>
+						<p class="activities-text">
 							オンラインだけではなく、企業様の協力のもと勉強会を定期的に開催しています。
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="our-activities__event-card col-12 col-md-10 bg-zan__black my-3 ml-3 overflow-hidden">
+		<div class="our-activities__event-card col-12 col-md-10 bg-zan__black my-3 ml-3 p-sm-5 overflow-hidden">
 			<div class="card-body px-0">
 				<div class="row text-white">
-					<div id="our-activities__event-icon" class="col-2">
+					<div id="our-activities__event-icon" class="col-2 col-sm-1">
 						<i class="far fa-calendar-alt text-xxl"></i>
 					</div>
 					<div class="col-10">
-						<h6>イベント</h6>
-						<p class="text-xs">
+						<h6 class="activities-title">イベント</h6>
+						<p class="activities-text">
 							企業様と企画中。。。
 						</p>
 					</div>
@@ -141,97 +143,98 @@
 			</div>
 		</div> 
 		<div class="row">
-			<div class="col-12 member-image">
-				<div class="col-8 mx-auto">
+			<div class="col-12 member-image box1">
+				<div class="col-8 col-sm-5 mx-auto">
 					<img class="member-image__tsuka fadein" src="img/yama.png">
 				</div>
 			</div>
-		</div>
-		<div class="member row col-12 mx-auto">
-			<div class="col-12">
-				<div class="member-introduction text-white">
-					<p>Yama</p>
-					<p class="text-xs">
-						文理混合学部所属。2019年3月プログラミング開始⇨次世代ラボRuby部門リーダー⇨プログラミングスクールメンター⇨ジアン運営⇨企業HP制作案件受託。
-					</p>
+			<div class="member row col-12 col-sm-6 mx-auto box2">
+				<div class="col-12 col-sm-8 mx-auto">
+					<div class="member-introduction text-white text-sm-xs text-md-xl">
+						<p>Yama</p>
+						<p class="">
+							文理混合学部所属。2019年3月プログラミング開始⇨次世代ラボRuby部門リーダー⇨プログラミングスクールメンター⇨ジアン運営⇨企業HP制作案件受託。
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-12">
-				<div class="sns-icon text-right">
-					<ul class="sns-icon__list d-inline-block">
-						<li class="sns-icon__item d-inline-block text-twitter text-xxl">
-							<a href=""><i class="fab fa-twitter-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-facebook text-xxl">
-							<a href=""><i class="fab fa-facebook-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-primary text-xxl">
-							<a href=""><i class="fas fa-envelope-square"></i></a>
-						</li>
-					</ul>
+				<div class="col-12 col-sm-4">
+					<div class="sns-icon text-right text-sm-center">
+						<ul class="sns-icon__list d-inline-block">
+							<li class="sns-icon__item d-inline-block text-twitter text-xxl">
+								<a href=""><i class="fab fa-twitter-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-facebook text-xxl">
+								<a href=""><i class="fab fa-facebook-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-primary text-xxl">
+								<a href=""><i class="fas fa-envelope-square"></i></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 member-image">
-				<div class="col-8 mx-auto">
+			<div class="col-12 member-image box1">
+				<div class="col-8 col-sm-5 mx-auto">
 					<img class="member-image__tsuka fadein" src="img/tsuka.png">
 				</div>
 			</div>
+			<div id="member-image__tsuka" class="member row col-12 col-sm-6 mx-auto box2">
+				<div class="col-12 col-sm-8 mx-auto">
+					<div class="member-introduction text-xs text-sm-xl text-white mx-auto">
+						<p>Tsuka</p>
+						<p class="">
+							都内の国立大学3年。独学でRailsを学ぶ中でShuntaと出会い、意気投合。ジアンを運営する傍ら、大手SIer/コンサルファームを目指し就活中。好きなサプリはロディオラ。
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4">
+					<div class="sns-icon text-right text-sm-center">
+						<ul class="sns-icon__list d-inline-block">
+							<li class="sns-icon__item d-inline-block text-twitter text-xxl">
+								<a href=""><i class="fab fa-twitter-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-facebook text-xxl">
+								<a href=""><i class="fab fa-facebook-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-primary text-xxl">
+								<a href=""><i class="fas fa-envelope-square"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="member-image__tsuka" class="member row col-12 mx-auto">
-			<div class="col-12">
-				<div class="member-introduction text-white mx-auto">
-					<p>Tsuka</p>
-					<p class="text-xs">
-						都内の国立大学3年。独学でRailsを学ぶ中でShuntaと出会い、意気投合。ジアンを運営する傍ら、大手SIer/コンサルファームを目指し就活中。好きなサプリはロディオラ。
-					</p>
-				</div>
-			</div>
-			<div class="col-12">
-				<div class="sns-icon text-right">
-					<ul class="sns-icon__list d-inline-block">
-						<li class="sns-icon__item d-inline-block text-twitter text-xxl">
-							<a href=""><i class="fab fa-twitter-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-facebook text-xxl">
-							<a href=""><i class="fab fa-facebook-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-primary text-xxl">
-							<a href=""><i class="fas fa-envelope-square"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div><div class="row">
-			<div class="col-12 member-image">
-				<div class="col-8 mx-auto">
+		<div class="row flexbox">
+			<div class="col-12 member-image box1">
+				<div class="col-8 col-sm-5 mx-auto">
 					<img class="member-image__tsuka fadein" src="img/shunta.png">
 				</div>
 			</div>
-		</div>
-		<div id="member-image__shunta" class="member row col-12 mx-auto">
-			<div class="col-12">
-				<div class="member-introduction text-white mx-auto">
-					<p>Shunta</p>
-					<p class="text-xs">
-						FintechSIer入社予定の都内大学4年 ︎。大学2.3年で人材営業インターン 、就活中に次世代ラボ創設⇨Railsスクールメンター ⇨独立してジアン創設⇨企業HP制作受託 ⇨ 11月中旬〜スタートアップでECサイト開発 。愛猫は琥太郎。
-					</p>
+			<div id="member-image__shunta" class="member row col-12 col-sm-6 mx-auto box2">
+				<div class="col-12 col-sm-8 mx-auto mx-sm-0">
+					<div class="member-introduction text-xs text-sm-xl text-white mx-auto">
+						<p>Shunta</p>
+						<p class="">
+							FintechSIer入社予定の都内大学4年 ︎。大学2.3年で人材営業インターン 、就活中に次世代ラボ創設⇨Railsスクールメンター ⇨独立してジアン創設⇨企業HP制作受託 ⇨ 11月中旬〜スタートアップでECサイト開発 。愛猫は琥太郎。
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-12">
-				<div class="sns-icon text-right">
-					<ul class="sns-icon__list d-inline-block">
-						<li class="sns-icon__item d-inline-block text-twitter text-xxl">
-							<a href="https://twitter.com/UveRedShunTa"><i class="fab fa-twitter-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-facebook text-xxl">
-							<a href="https://www.facebook.com/uverawa"><i class="fab fa-facebook-square"></i></a>
-						</li>
-						<li class="sns-icon__item d-inline-block text-primary text-xxl">
-							<a href=""><i class="fas fa-envelope-square"></i></a>
-						</li>
-					</ul>
+				<div class="col-12 col-sm-4">
+					<div class="sns-icon text-right text-sm-center">
+						<ul class="sns-icon__list d-inline-block">
+							<li class="sns-icon__item d-inline-block text-twitter">
+								<a href="https://twitter.com/UveRedShunTa"><i class="fab fa-twitter-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-facebook">
+								<a href="https://www.facebook.com/uverawa"><i class="fab fa-facebook-square"></i></a>
+							</li>
+							<li class="sns-icon__item d-inline-block text-primary">
+								<a href=""><i class="fas fa-envelope-square"></i></a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -249,19 +252,43 @@
 				</div>
 			</div>
 		</div>
-		<div class="row col-11 bg-dark mx-auto px-0 py-2">
-			<div class="col-4 d-flex align-items-center">
-				<img class="" src="https://placehold.jp/100x120.png">
+		<div class="content-wrapper col-11 ml-auto bg-zan__black px-0 py-2">
+			<div class="items-wrapper">
+				<ul id="content-items" class="d-flex list-unstyled">	
+					<li class="ml-3">
+					<a href="#">
+						<img src="https://placehold.jp/100x120.png" alt="">
+						<h5>勉強会</h5>
+					</a>
+					</li>
+					<li class="center ml-3">
+					<a href="#">
+						<img src="https://placehold.jp/100x120.png" alt="">
+						<h5>LINE</h5>
+					</a>
+					</li>
+					<li class="ml-3">
+					<a href="#">
+						<img src="https://placehold.jp/100x120.png" alt="">
+						<h5>忘年会</h5>
+					</a>
+					</li>
+					<li class="ml-3">
+					<a href="#">
+						<img src="https://placehold.jp/100x120.png" alt="">
+						<h5>Yama</h5>
+					</a>
+					</li>
+					<li class="ml-3">
+					<a href="#">
+						<img src="https://placehold.jp/100x120.png" alt="">
+						<h5>Tsuka</h5>
+					</a>
+					</li>
+			</ul>
 			</div>
-			<div class="col-4">
-				<img class=""src="https://placehold.jp/100x150.png">
-			</div>
-			<div class="col-4 d-flex align-items-center">
-				<img class="" src="https://placehold.jp/100x120.png">
-			</div>
-			<div>
-			<p class="text-white pt-3 pl-3">＜<　>＞</p>
-			</div>
+			<span class="arrow right" id="next">＜<</span>
+			<span class="arrow left" id="prev">>＞</span>
 		</div>
 	</section>
 
@@ -281,13 +308,13 @@
 					<div class="footer-icon">
 						<div class="sns-icon text-right">
 							<ul class="sns-icon__list d-inline-block">
-								<li class="sns-icon__item d-inline-block text-white text-xl">
+								<li class="sns-icon__footer-item d-inline-block text-white text-xl">
 									<a href="https://twitter.com/zantiphon"><i class="fab fa-twitter"></i></a>
 								</li>
-								<li class="sns-icon__item d-inline-block text-white text-xl mx-2">
+								<li class="sns-icon__footer-item d-inline-block text-white text-xl mx-2">
 									<a href="#"><i class="fab fa-facebook-f"></i></a>
 								</li>
-								<li class="sns-icon__item d-inline-block text-white text-xl">
+								<li class="sns-icon__footer-item d-inline-block text-white text-xl">
 									<a href="https://github.com/Z-antiphon"><i class="fab fa-github"></i></a>
 								</li>
 							</ul>
@@ -305,6 +332,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="js/slick.min.js"></script> -->
 	<script src="js/image-scroll.js"></script>
 </body>
 </html>
