@@ -59,7 +59,7 @@ $(function(){
     const $items = $('#content-items');
     const $page = $('#content-items li');
     const shiftWidth = $page.outerWidth(true);
-    const shiftTime = 800;
+    const shiftTime = 300;
   
   
     // ----谺｡縺ｸ----
@@ -67,9 +67,11 @@ $(function(){
       $items.stop().animate({
         left: -shiftWidth
       },function(){
+        // 先頭のli要素を最後部へ移動
         $items.append($items.find('li').eq(0));
-        $items.css({left:0});
+        // 先頭にきたli要素のcenterクラスを削除
         $items.find('li').eq(0).removeClass('center');
+        //2番目になったli要素へcenterクラスを添付
         $items.find('li').eq(1).addClass('center');
       });
   
@@ -82,7 +84,7 @@ $(function(){
       },function(){
         $items.prepend($items.find('li').eq(length-1));
         $items.css({left: -shiftWidth});
-        $items.find('li').eq(3).removeClass('center');
+        $items.find('li').eq(length-1).removeClass('center');
         $items.find('li').eq(2).addClass('center');
       });
   
