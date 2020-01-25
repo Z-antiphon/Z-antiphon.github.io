@@ -118,7 +118,7 @@ $(function(){
   $(function(){
     $('.navbar-toggler').on('click', function() {
         if('.wrap.active'){
-            $('.afterbegin').remove();
+            $('.menu').remove();
         }
 
         $(this).toggleClass('active');
