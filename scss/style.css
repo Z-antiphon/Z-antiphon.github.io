@@ -391,7 +391,7 @@ a {
   height: 430px;
   margin: 10px 40px 0;
   z-index: -1;
-  transition: .7s;
+  transition: .4s;
   
 }
 
@@ -421,11 +421,11 @@ a {
 
 #content-items li.center h2::before {
   left: 0;
-  transition: .5s;
+  transition: .4s;
 }
 
 .items-wrapper{
-  padding:10em 0px;
+  padding:7em 0px;
 }
 
 .flexbox {
