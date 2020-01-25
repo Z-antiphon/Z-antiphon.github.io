@@ -216,12 +216,12 @@ a {
 .sns-icon__item {
   font-size: 3rem;
   vertical-align: middle;
-  margin: 0 0.25rem;
+  margin: 0 0.05rem;
 }
 
 @media (max-width: 575px) {
   .sns-icon__item {
-    font-size: 0.875rem;
+    font-size: 2rem;
   }
 }
 
