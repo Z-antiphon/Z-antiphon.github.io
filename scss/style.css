@@ -145,6 +145,7 @@ a {
 
 @media (max-width: 575px) {
   #about-image {
+    width: 250px;
     height: 25rem;
     margin: 0 auto;
     text-align: left;

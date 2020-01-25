@@ -160,6 +160,7 @@ $twitter: #1DA1F2;
 	position: relative;
 	height: 50rem;
 	@include respond-below(sm) {
+		width: 250px;
 		height: 25rem;
 		margin: 0 auto;
 		text-align: left;
