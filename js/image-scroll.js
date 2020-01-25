@@ -68,9 +68,14 @@ $(function(){
         left: -shiftWidth
       },function(){
         $items.append($items.find('li').eq(0));
-        $items.css({left:0});
-        $items.find('li').eq(0).removeClass('center');
-        $items.find('li').eq(1).addClass('center');
+        $items.find('li').eq(2).removeClass('center');
+        $items.css('left');
+        $items.find('li').eq(2).addClass('center');
+
+        // ($items.find('li').eq(2)).removeClass('center');
+        // ($items.find('li').eq(2)).prependTo('$items');
+        // ($items.find('li').eq(1)).appendTo('$items');
+        // $items.find('li').eq(3).addClass('center');
       });
   
     }
@@ -82,7 +87,7 @@ $(function(){
       },function(){
         $items.prepend($items.find('li').eq(length-1));
         $items.css({left: -shiftWidth});
-        $items.find('li').eq(3).removeClass('center');
+        $items.find('li').eq(length-1).removeClass('center');
         $items.find('li').eq(2).addClass('center');
       });
   
