@@ -51,51 +51,7 @@ $(function(){
     });
 });
 
-// $('.slider').slick({
-//     dots: true,
-//     infinite: true,
-//     slidesToShow:3,
-//     slidesToScroll: 1,
-// });
 
-// $(function(){
-//     const $items = $('.slider');
-//     const $page = $('.slider.slide__item');
-//     const shiftWidth = $page.outerWidth(true);
-//     const shiftTime = 800;
-//     // ----次へ----
-//     const Next = () => {
-//         $items.stop().animate({
-//         left: -shiftWidth
-//         },function(){
-//         $items.append($items.find('.slider').eq(0));
-//         $items.css({left:0});
-//         $items.find('.slider').eq(0).removeClass('center');
-//         $items.find('.slider').eq(1).addClass('center');
-//         });
-//     }
-//     // ----前へ----
-//     const Prev = () => {
-//         $items.animate({
-//         left: 0
-//         },function(){
-//         $items.prepend($items.find('.slider').eq(length-1));
-//         $items.css({left: -shiftWidth});
-//         $items.find('.slider').eq(3).removeClass('center');
-//         $items.find('.slider').eq(2).addClass('center');
-//         });
-//     }
-//     // ----次へボタン----
-//     $('#next').click(function(){
-//         Next();
-//     });
-//     // ----前へボタン----
-//     $('#prev').click(function(){
-//         Prev();
-//     });
-//     // -----自動送り----
-//     setInterval(Next,6000);
-// });
 
 
 
