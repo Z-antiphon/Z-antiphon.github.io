@@ -63,6 +63,11 @@ a {
   object-fit: cover;
 }
 
+.arrow{
+  font-size: 5rem;
+  cursor: pointer;
+}
+
 @media (max-width: 575px) {
   .main-visual__image {
     width: 300px;
@@ -381,21 +386,31 @@ a {
   background: #ff3791;
 }
 
-#content-items li.center {
+#content-items li img{
+  width: 290px;
+  height: 430px;
+  margin: 10px 40px 0;
+  z-index: -1;
+  transition: .7s;
+  
+}
+
+/* #content-items li .center {
   width: 400px;
   height: 560px;
   margin: 20px 60px 0;
   transition: .7s;
-}
+} */
 
 #content-items li.center img {
-  width: 200px;
-  height: 250px;
+  width: 330px;
+  height: 450px;
   object-fit: cover;
   object-position: center;
   filter: grayscale(0);
   transition: .7s;
   box-shadow: 20px 20px 0 #fff;
+  z-index: -2;
 }
 
 #content-items li.center h2 {
@@ -407,6 +422,10 @@ a {
 #content-items li.center h2::before {
   left: 0;
   transition: .5s;
+}
+
+.items-wrapper{
+  padding:10em 0px;
 }
 
 .flexbox {
