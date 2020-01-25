@@ -114,3 +114,20 @@ $(function(){
       $('header').slideUp();
     });
   });
+
+  $(function(){
+    $('.navbar-toggler').on('click', function() {
+        if('.wrap.active'){
+            $('.afterbegin').remove();
+        }
+
+        $(this).toggleClass('active');
+        $('.wrap').toggleClass('active');
+
+        if('.wrap.active'){
+            $('.wrap.active').prepend('<div class="menu">AfterBegin</div>');
+        }
+
+        return false;
+        });
+  });
