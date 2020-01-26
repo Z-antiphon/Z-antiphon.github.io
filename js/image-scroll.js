@@ -126,3 +126,27 @@ $(function(){
         return false;
         });
   });
+
+  // レスポンシブ表示の画像表のための機能
+  $(function(){
+    const $page = $('#content-items li');
+
+    //置換の対象とするclass"js-image-switch"
+    var $elem = $('.js-image-switch');
+    // 画像を切り替えるウィンドウサイズ。
+    var replaceWidth = 575;
+
+    function imageSwitch() {
+      // ウィンドウサイズを取得する。
+      var windowWidth = parseInt(window.innerWidth);
+
+      // ページ内にあるすべての`.js-image-switch`に適応される。
+      $elem.each(function() {
+        var $this = $(this);
+        // ウィンドウサイズが575px以下であれば先頭のli要素を除いてdisplay:noneをaddClassする。
+        if(windowWidth <= replaceWidth) {
+          $('#top>li').addClass('display:none');
+        }
+      });
+    }
+  });

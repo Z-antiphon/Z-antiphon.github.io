@@ -426,11 +426,7 @@ header{
   transform: translate(0, 0);
 }
 
-.items-wrapper{
-  overflow : hidden;
-  padding:none;
 
-}
 
 #content-items h2 {
   color: #555;
@@ -462,7 +458,6 @@ header{
   z-index: -1;
   transition: .4s;
   object-fit: cover;
-  
 }
 
 /* #content-items li .center {
@@ -497,7 +492,8 @@ header{
 }
 
 .items-wrapper{
-  padding:7em 0px;
+  padding:1em 0px;
+  overflow : hidden;
 }
 
 .flexbox {
@@ -540,4 +536,17 @@ header{
     -webkit-order: 2;
     order: 2;
   }
+  /* レスポンシブ時のblogの画像の大きさの指定 */
+  #content-items li img{
+    width: 290px;
+    height: 430px;
+    margin: 10px 20px 0;
+    z-index: -1;
+    transition: .4s;
+    object-fit: cover;
+  }
+
 }
+
+
+
