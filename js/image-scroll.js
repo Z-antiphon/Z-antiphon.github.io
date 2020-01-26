@@ -127,16 +127,30 @@ $(function(){
     });
 });
 
+// モーダル関係の関数
 $(function(){
+    // メニューボタンをクリックするとモーダルを表示
     $('.modal-toggler').on('click',function(){
         $('.modal').fadeIn();
         $(this).toggleClass('modal-toggler__close');
         return false;
     });
+    // モーダル表示中のアクション
     $('.modal-toggler__close').on('click',function(){
+        // リンク部分をクリックすると、リンク先のセクションまでスクロール
+        $('a[href^=#]').click(function(){
+            var speed = 800;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({scrollTop:position}, speed, "swing");
+            return true;
+        });
+
+        // 任意の場所をクリックすると(スクロール時含め)モーダルが閉じる ※return trueじゃないと何故かリンクが上手く飛ばない
         $('.modal').fadeOut();
         $('.modal-toggler').toggleClass('modal-toggler__close active');
-        return false;
+        return true;
     });
 });
 
@@ -164,18 +178,3 @@ $(function(){
     }
   });
 
-  // ページtopスクロールイベント
-$(function scrooltop(){
-  //デフォルトのイベントをキャンセル
-  event.preventDefault();
-
-  // 移動先となる要素を取得します。
-  var target = $('#main-visual');
-  if (!target.length) return;
-
-  // 移動先の位置を取得します
-  var targetY = target.offset().top;
-
-  // animateで移動します
-  $('body').animate({scrollTop: targetY}, 1000, 'swing');
-});
