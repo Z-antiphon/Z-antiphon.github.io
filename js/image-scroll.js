@@ -122,17 +122,7 @@ $(function(){
 
   $(function(){
     $('.navbar-toggler').on('click', function() {
-        if('.wrap.active'){
-            $('.menu').remove();
-        }
-
         $(this).toggleClass('active');
-        $('.wrap').toggleClass('active');
-
-        if('.wrap.active'){
-            $('.wrap.active').prepend('<div class="menu">AfterBegin</div>');
-        }
-
         return false;
         });
   });
