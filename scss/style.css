@@ -220,7 +220,7 @@ header{
 }
 
 .section-headline {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .section-headline-text {
@@ -465,10 +465,7 @@ header{
   transform: translate(0, 0);
 }
 
-.items-wrapper{
-  overflow : hidden;
 
-}
 
 #content-items h2 {
   color: #555;
@@ -499,7 +496,7 @@ header{
   margin: 10px 40px 0;
   z-index: -1;
   transition: .4s;
-  
+  object-fit: cover;
 }
 
 /* #content-items li .center {
@@ -518,7 +515,7 @@ header{
   object-position: center;
   filter: grayscale(0);
   transition: .7s;
-  box-shadow: 20px 20px 0 #fff;
+  box-shadow: 20px 20px 0 rgba(255, 255, 255, 0.315);
   z-index: -2;
 }
 
@@ -534,7 +531,8 @@ header{
 }
 
 .items-wrapper{
-  padding:7em 0px;
+  padding:1em 0px;
+  overflow : hidden;
 }
 
 .flexbox {
@@ -577,4 +575,17 @@ header{
     -webkit-order: 2;
     order: 2;
   }
+  /* レスポンシブ時のblogの画像の大きさの指定 */
+  #content-items li img{
+    width: 290px;
+    height: 430px;
+    margin: 10px 20px 0;
+    z-index: -1;
+    transition: .4s;
+    object-fit: cover;
+  }
+
 }
+
+
+
