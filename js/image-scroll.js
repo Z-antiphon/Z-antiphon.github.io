@@ -127,13 +127,17 @@ $(function(){
     });
 });
 
+// モーダル関係の関数
 $(function(){
+    // メニューボタンをクリックするとモーダルを表示
     $('.modal-toggler').on('click',function(){
         $('.modal').fadeIn();
         $(this).toggleClass('modal-toggler__close');
         return false;
     });
+    // モーダル表示中のアクション
     $('.modal-toggler__close').on('click',function(){
+        // リンク部分をクリックすると、リンク先のセクションまでスクロール
         $('a[href^=#]').click(function(){
             var speed = 500;
             var href= $(this).attr("href");
@@ -143,6 +147,7 @@ $(function(){
             return true;
         });
 
+        // 任意の場所をクリックすると(スクロール時含め)モーダルが閉じる ※return trueじゃないと何故かリンクが上手く飛ばない
         $('.modal').fadeOut();
         $('.modal-toggler').toggleClass('modal-toggler__close active');
         return true;
