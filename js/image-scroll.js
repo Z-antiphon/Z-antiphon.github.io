@@ -62,7 +62,7 @@ $(function(){
     const shiftTime = 300;
   
   
-    // ----谺｡縺ｸ----
+    // ---- Next ----
     const Next = () => {
       $items.stop().animate({
         left: -shiftWidth
@@ -71,31 +71,34 @@ $(function(){
         $items.append($items.find('li').eq(0));
         // 先頭にきたli要素のcenterクラスを削除
         $items.find('li').eq(0).removeClass('center');
-        //2番目になったli要素へcenterクラスを添付
+        //2番目になったli要素へcenterクラスを追加
         $items.find('li').eq(1).addClass('center');
       });
   
     }
   
-    // ----蜑阪∈----
+    // ---- previous ----
     const Prev = () => {
       $items.animate({
         left: 0
       },function(){
-        $items.prepend($items.find('li').eq(length-1));
-        $items.css({left: -shiftWidth});
-        $items.find('li').eq(length-1).removeClass('center');
-        $items.find('li').eq(2).addClass('center');
+        // 最後尾のli要素を取得し要素の先頭へ移動させる
+        $items.prepend($items.find('li:last'));
+        // $items.css({left: -shiftWidth});
+        // 3番目になったli要素のcenterクラスを削除
+        $items.find('li').eq(2).removeClass('center');
+        // 2番目になったli要素にcenterクラスを追加
+        $items.find('li').eq(1).addClass('center');
       });
   
     }
   
-    // ----谺｡縺ｸ繝懊ち繝ｳ----
+    // ---- clickアクション next ----
     $('#next').click(function(){
       Next();
     });
   
-    // ----蜑阪∈繝懊ち繝ｳ----
+    // ---- clickアクション previous ----
     $('#prev').click(function(){
       Prev();
     });
