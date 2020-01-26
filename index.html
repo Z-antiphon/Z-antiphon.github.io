@@ -15,30 +15,26 @@
 <body>
     <!-- modal -->
     <header>
-        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#memuModal" aria-expanded="false" aria-label="Toggle modal">
+        <button class="navbar-toggler modal-toggler" type="button" data-toggle="modal" data-target="#memuModal" aria-expanded="false" aria-label="Toggle modal" aria-modal="true">
           <span></span>
           <span></span>
           <span></span>
         </button>
   
         <!-- Modal -->
-        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+        <div class="modal fade show" id="menuModal" role="dialog" aria-hidden="true">
+            <div class="modal-background modal-toggler__close" role="document">
+                <div class="menu-logo py-4 pl-sm-0 px-0">
+                    <a class="modal-link" href="#main-visual">
+                        <img class="menu-zan-logo" src="img/logo.png" alt="">
+                    </a>
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="modal-content">
+                    <a class="modal-link bg-zan__moodal text-white fs-gilbert-color-bold-preview5" href="#about">About</a>
+                    <a class="modal-link bg-zan__moodal text-white fs-gilbert-color-bold-preview5" href="#our-activities">Our activities</a>
+                    <a class="modal-link bg-zan__moodal text-white fs-gilbert-color-bold-preview5" href="#member">Member</a>
+                    <a class="modal-link bg-zan__moodal text-white fs-gilbert-color-bold-preview5" href="#blog">Blog</a>
                 </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
             </div>
         </div>
     </header>
@@ -69,7 +65,7 @@
 			<div class="col-12">
 				<div class="section-headline">
 					<h3 class="section-headline-text">
-						<span class="section-headline-text__about px-4 ml-3 bg-light rounded-pill text-black fs-gilbert-color-bold-preview5">About</span>
+                        <span class="section-headline-text__about px-4 ml-3 bg-light rounded-pill text-black fs-gilbert-color-bold-preview5">About</span>
 					</h3>
 				</div>
 			</div>
@@ -198,7 +194,7 @@
 					<div class="sns-icon text-right text-sm-center">
 						<ul class="sns-icon__list d-inline-block">
 							<li class="sns-icon__item d-inline-block text-twitter text-lg">
-								<a href=""><i class="fab fa-twitter-square"></i></a>
+								<a href=""　target="_blank"><i class="fab fa-twitter-square"></i></a>
 							</li>
 							<li class="sns-icon__item d-inline-block text-facebook text-xxl">
 								<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>

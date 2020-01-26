@@ -120,9 +120,22 @@ $(function(){
     });
   });
 
-  $(function(){
+$(function(){
     $('.navbar-toggler').on('click', function() {
         $(this).toggleClass('active');
         return false;
-        });
-  });
+    });
+});
+
+$(function(){
+    $('.modal-toggler').on('click',function(){
+        $('.modal').fadeIn();
+        $(this).toggleClass('modal-toggler__close');
+        return false;
+    });
+    $('.modal-toggler__close').on('click',function(){
+        $('.modal').fadeOut();
+        $('.modal-toggler').toggleClass('modal-toggler__close active');
+        return false;
+    });
+});
