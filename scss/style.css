@@ -19,9 +19,16 @@ header{
     position: -webkit-fixed;
     top: 16px;
     right: 9px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     z-index: 2;
+}
+
+@media (max-width: 575px){
+    header{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .text-xxs {
@@ -69,8 +76,8 @@ header{
 }
 
 .main-visual__image {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .arrow{
@@ -80,7 +87,7 @@ header{
 
 @media (max-width: 575px) {
   .main-visual__image {
-    width: 300px;
+    width: 248px;
     height: 600px;
     object-fit: cover;
   }
@@ -132,37 +139,52 @@ header{
     background-color: rgb(216, 177, 79);
     width: 100%;
     height: 100%;
+    z-index: 10000;
     transition: all .5s;
 }
 
 .navbar-toggler span {
     margin-left: 5px;
     position: absolute;
-    right: 10px;
+    right: 19%;
     height: 1px;
     background-color: #fff;
     transition: all .5s;
 }
 
+@media (max-width: 575px){
+    .navbar-toggler span{
+        right: 19%;
+    }
+}
+
 .navbar-toggler span:nth-of-type(1) {
-    top: 12px;
+    top: 25%;
     width: 60%;
 }
 
 .navbar-toggler span:nth-of-type(2) {
-    top: 25px;
+    top: 50%;
     width: 45%;
 }
 
 .navbar-toggler span:nth-of-type(3) {
-    bottom: 12px;
+    bottom: 25%;
     width: 30%;
 }
 
 .navbar-toggler.active span:nth-of-type(1) {
-    -webkit-transform: translateY(12px) translateX(3px) rotate(-45deg);
-    transform: translateY(12px) translateX(3px) rotate(-45deg);
+    -webkit-transform: translateY(19.2px) translateX(4.8px) rotate(-45deg);
+    transform: translateY(19.2px) translateX(4.8px) rotate(-45deg);
     width: 70%;
+}
+
+@media (max-width: 575px){
+    .navbar-toggler.active span:nth-of-type(1) {
+        -webkit-transform: translateY(12px) translateX(3px) rotate(-45deg);
+        transform: translateY(12px) translateX(3px) rotate(-45deg);
+        width: 70%;
+    }
 }
 
 .navbar-toggler.active span:nth-of-type(2) {
@@ -171,13 +193,17 @@ header{
 }
 
 .navbar-toggler.active span:nth-of-type(3) {
-    -webkit-transform: translateY(-13px) translateX(3px) rotate(45deg);
-    transform: translateY(-13px) translateX(3px) rotate(45deg);
+    -webkit-transform: translateY(-20.8px) translateX(4.8px) rotate(45deg);
+    transform: translateY(-20.8px) translateX(4.8px) rotate(45deg);
     width: 70%;
 }
 
-.navbar-toggler{
-    z-index: 3000;
+@media (max-width: 575px){
+    .navbar-toggler.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-13px) translateX(3px) rotate(45deg);
+        transform: translateY(-13px) translateX(3px) rotate(45deg);
+        width: 70%;
+    }
 }
 
 .modal{
